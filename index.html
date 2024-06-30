@@ -9,31 +9,38 @@
 </head>
 <body>
     <header>
-   
-            <h1>Mary Jane</h1>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-
+        <h1>Mary Jane</h1>
+        <!-- Hidden checkbox for menu toggle -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label> 
+        <!-- Navigation menu -->
+        <nav id="main-menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
+
     <section id="home" class="home-con">
        <h1>Mary Jane</h1>
        <h3>Software Engineer & Blogger</h3>
        <a href="#contact">Contact me</a>
     </section>
-    <section id="about" class="container">
+    <section id="about" class="about-con">
         <h2>About Me</h2>
-        <p>Hello! I'm Mary Jane, a passionate app and web developer with 3 years of experience in creating dynamic and user-friendly applications. I specialize in building responsive and high-performing websites and mobile apps using the latest technologies. I thrive on solving complex problems and constantly seek opportunities to learn and grow.</p>
-        <p>My journey into development started with a curiosity for technology and a desire to build things that make a difference. Over the years, I've worked on various projects, from small business websites to large-scale applications, always striving to deliver high-quality code and exceptional user experiences.</p>
+        <div class="about-content">
+            <img src="images/about.jpeg" alt="Mary Jane">
+            <p>Hello! I'm Mary Jane, a passionate software engineer with over 10 years of experience in developing cutting-edge applications. I specialize in full-stack development, with a strong background in both front-end and back-end technologies. I am dedicated to continuous learning and enjoy sharing my knowledge through blogging and mentoring aspiring developers.</p>
+            <p>My journey in tech started during my university years, where I discovered my love for coding and problem-solving. Over the years, I have worked with various tech giants and startups, contributing to diverse projects ranging from web applications to mobile solutions. My approach to software engineering is both strategic and creative, ensuring that the solutions I develop are not only efficient but also user-friendly and visually appealing.</p>
+            <p>When I'm not coding, you can find me exploring the latest tech trends, writing articles for my blog, or indulging in my love for photography and travel. I believe in the power of technology to transform lives and am committed to using my skills to make a positive impact in the world.</p>
+        </div>
     </section>
-    <section id="skills" class="container">
+    <section id="skills" class="skills-con">
         <h2>Skills</h2>
         <ul class="skills-list">
             <li><i class="fab fa-html5"></i> HTML</li>
@@ -41,43 +48,116 @@
             <li><i class="fab fa-js"></i> JavaScript</li>
             <li><i class="fab fa-react"></i> React</li>
             <li><i class="fab fa-node"></i> Node.js</li>
-            <li><i class="fab fa-flutter"></i> Flutter</li>
             <li><i class="fas fa-database"></i> SQL</li>
+            <li><i class="fab fa-python"></i> Python</li>
+            <li><i class="fab fa-java"></i> Java</li>
+            <li><i class="fab fa-angular"></i> Angular</li>
+            <li><i class="fab fa-vuejs"></i> Vue.js</li>
+            <li><i class="fab fa-php"></i> PHP</li>
+            <li><i class="fab fa-wordpress"></i> WordPress</li>
+      
         </ul>
+        
     </section>
-    <section id="projects" class="container">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project One</h3>
-            <p>An innovative e-commerce platform built with React and Node.js, offering seamless shopping experiences.</p>
-            <a href="https://example.com" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-        </div>
-        <div class="project">
-            <h3>Project Two</h3>
-            <p>A social networking app developed with Flutter, connecting people around the globe with unique features.</p>
-            <a href="https://example.com" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-        </div>
-        <div class="project">
-            <h3>Project Three</h3>
-            <p>A content management system designed with React and SQL, enabling efficient content creation and management.</p>
-            <a href="https://example.com" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+    <section id="projects" class="projects-con">
+ 
+            <h2>Projects Built</h2>
+    
+        <div class="projects">
+            <div class="project-card">
+                <img src="images/scribble.jpeg" alt="Scribble">
+                <div class="project-info">
+                    <h3>Scribble</h3>
+                    <p>A content management platform for bloggers and writers. Scribble allows users to create, edit, and publish blog posts with ease. It includes features like real-time collaboration, version control, and SEO optimization. Built with Django and React.</p>
+         
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="images/travelmate.jpg" alt="TravelMate">
+                <div class="project-info">
+                    <h3>TravelMate</h3>
+                    <p>A mobile app designed for travel enthusiasts, offering personalized itineraries, real-time travel updates, and a social platform for sharing travel experiences. Developed with React Native and integrated with various travel APIs.</p>
+                </div>
+            </div>
+          
+            <div class="project-card">
+                <img src="images/bloggify.jpeg" alt="Blogify">
+                <div class="project-info">
+                    <h3>Blogify</h3>
+                    <p>A custom blogging platform that offers an intuitive content management system, SEO optimization, and a user-friendly interface. Blogify is designed to help bloggers manage their content efficiently. Developed using Django and Vue.js.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="images/fittrack.jpeg" alt="FitTrack">
+                <div class="project-info">
+                    <h3>FitTrack</h3>
+                    <p>A fitness tracker app that helps users log workouts, track progress, and set fitness goals. FitTrack includes features like workout reminders, progress charts, and social sharing. Built with Swift for iOS and Kotlin for Android.</p>
+                </div>
+            </div>
+         
         </div>
     </section>
-    <section id="testimonials" class="container">
+    
+    <section id="testimonials" class="testimonial-con">
         <h2>Testimonials</h2>
-        <div class="testimonial">
-            <p>"John's work on our project was outstanding. His attention to detail and ability to solve complex problems made a significant impact on our business." - Jane Smith, CEO of TechCorp</p>
-        </div>
-        <div class="testimonial">
-            <p>"Working with John was a pleasure. His expertise and dedication were evident in every aspect of the project." - Michael Brown, Project Manager at WebSolutions</p>
+        <div class="testimonial-carousel">
+            <input type="radio" name="carousel" id="slide1" checked>
+            <input type="radio" name="carousel" id="slide2">
+            <input type="radio" name="carousel" id="slide3">
+    
+            <div class="testimonial-slides">
+                <div class="testimonial-slide">
+                    <img src="images/testimonial1.jpg" alt="John Doe">
+                    <p>"Mary Jane's expertise and dedication were crucial to our project's success. Her problem-solving skills and innovative approach are unmatched."</p>
+                    <h4>John Doe</h4>
+                    <h5>CEO, Tech Solutions</h5>
+                </div>
+                <div class="testimonial-slide">
+                    <img src="images/testimonial2.jpg" alt="Jane Smith">
+                    <p>"Working with Mary was a pleasure. She consistently delivered high-quality work and was always willing to go the extra mile."</p>
+                    <h4>Jane Smith</h4>
+                    <h5>Project Manager, Web Innovators</h5>
+                </div>
+                <div class="testimonial-slide">
+                    <img src="images/testimonial3.jpeg" alt="Robert Brown">
+                    <p>"Mary's technical skills are top-notch. She brought our ideas to life with her expertise and creativity."</p>
+                    <h4>Robert Brown</h4>
+                    <h5>CTO, Startup Inc.</h5>
+                </div>
+            </div>
+    
+            <div class="carousel-controls">
+                <label for="slide1" class="carousel-control"></label>
+                <label for="slide2" class="carousel-control"></label>
+                <label for="slide3" class="carousel-control"></label>
+            </div>
         </div>
     </section>
-    <section id="contact" class="container">
-        <h2>Contact</h2>
-        <p>If you'd like to get in touch, feel free to email me at <a href="mailto:johndoe@example.com">johndoe@example.com</a> or find me on <a href="https://www.linkedin.com/in/johndoe" target="_blank">LinkedIn</a>.</p>
+    
+    
+    
+    
+    
+    
+    <section id="contact" class="contact-info">
+   
+        <div >
+            <h2><i class="fas fa-handshake"></i> Contact me </h2>
+            <p> If you'd like to get in touch, feel free to email me at <i class="fas fa-envelope"></i> <a href="mailto:maryjane@example.com">maryjane@example.com</a> or find me on <a href="https://www.linkedin.com/in/maryjane" target="_blank">LinkedIn</a>.</p>
+        </div>
     </section>
+    
+    
     <footer class="container">
-        <p>&copy; 2024 Mary Jane. All rights reserved.</p>
+        <div class="footer-content">
+            <p>&copy; 2024 Mary Jane. All rights reserved.</p>
+            <ul class="social-links">
+                <li><a href="https://www.linkedin.com/in/maryjane" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://twitter.com/maryjanetweets" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://github.com/maryjane" target="_blank"><i class="fab fa-github"></i></a></li>
+            </ul>
+        </div>
     </footer>
+    
 </body>
 </html>
