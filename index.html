@@ -1,43 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Mary Jane</title>
+    <title>Jane Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
     <header>
         <h1>Mary Jane</h1>
-        <!-- Hidden checkbox for menu toggle -->
         <input type="checkbox" id="menu-toggle" class="menu-toggle">
-        <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label> 
-        <!-- Navigation menu -->
+        <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
         <nav id="main-menu">
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#testimonial">Testimonial</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-
-    <section id="home" class="home-con">
-       <h1>Mary Jane</h1>
-       <h3>Software Engineer & Blogger</h3>
-       <a href="#contact">Contact me</a>
+    <section class="home-con" id="home">
+        <h1>Mary Jane</h1>
+        <h3>Software Engineer and Blogger</h3>
+        <a href="#contact">Contact me</a>
     </section>
     <section id="about" class="about-con">
         <h2>About Me</h2>
         <div class="about-content">
-            <img src="images/about.jpeg" alt="Mary Jane">
-            <p>Hello! I'm Mary Jane, a passionate software engineer with over 10 years of experience in developing cutting-edge applications. I specialize in full-stack development, with a strong background in both front-end and back-end technologies. I am dedicated to continuous learning and enjoy sharing my knowledge through blogging and mentoring aspiring developers.</p>
-            <p>My journey in tech started during my university years, where I discovered my love for coding and problem-solving. Over the years, I have worked with various tech giants and startups, contributing to diverse projects ranging from web applications to mobile solutions. My approach to software engineering is both strategic and creative, ensuring that the solutions I develop are not only efficient but also user-friendly and visually appealing.</p>
-            <p>When I'm not coding, you can find me exploring the latest tech trends, writing articles for my blog, or indulging in my love for photography and travel. I believe in the power of technology to transform lives and am committed to using my skills to make a positive impact in the world.</p>
+            <img src="./images/about.jpeg" alt="Mary Jane">
+            <p>Hello! I'm Mary Jane, a passionate software engineer with over 10 years of experience in developing
+                cutting-edge applications. I specialize in full-stack development, with a strong background in both
+                front-end and back-end technologies. I am dedicated to continuous learning and enjoy sharing my
+                knowledge through blogging and mentoring aspiring developers.</p>
+            <p>My journey in tech started during my university years, where I discovered my love for coding and
+                problem-solving. Over the years, I have worked with various tech giants and startups, contributing to
+                diverse projects ranging from web applications to mobile solutions. My approach to software engineering
+                is both strategic and creative, ensuring that the solutions I develop are not only efficient but also
+                user-friendly and visually appealing.</p>
+            <p>When I'm not coding, you can find me exploring the latest tech trends, writing articles for my blog, or
+                indulging in my love for photography and travel. I believe in the power of technology to transform lives
+                and am committed to using my skills to make a positive impact in the world.</p>
+
         </div>
     </section>
     <section id="skills" class="skills-con">
@@ -55,77 +64,83 @@
             <li><i class="fab fa-vuejs"></i> Vue.js</li>
             <li><i class="fab fa-php"></i> PHP</li>
             <li><i class="fab fa-wordpress"></i> WordPress</li>
-      
         </ul>
-        
     </section>
     <section id="projects" class="projects-con">
- 
-            <h2>Projects Built</h2>
-    
+        <h2>Projects Built</h2>
         <div class="projects">
             <div class="project-card">
                 <img src="images/scribble.jpeg" alt="Scribble">
                 <div class="project-info">
                     <h3>Scribble</h3>
-                    <p>A content management platform for bloggers and writers. Scribble allows users to create, edit, and publish blog posts with ease. It includes features like real-time collaboration, version control, and SEO optimization. Built with Django and React.</p>
-         
+                    <p>A content management platform for bloggers and writers. Scribble allows users to create, edit,
+                        and publish blog posts with ease. It includes features like real-time collaboration, version
+                        control, and SEO optimization. Built with Django and React.</p>
+
                 </div>
             </div>
             <div class="project-card">
                 <img src="images/travelmate.jpg" alt="TravelMate">
                 <div class="project-info">
                     <h3>TravelMate</h3>
-                    <p>A mobile app designed for travel enthusiasts, offering personalized itineraries, real-time travel updates, and a social platform for sharing travel experiences. Developed with React Native and integrated with various travel APIs.</p>
+                    <p>A mobile app designed for travel enthusiasts, offering personalized itineraries, real-time travel
+                        updates, and a social platform for sharing travel experiences. Developed with React Native and
+                        integrated with various travel APIs.</p>
                 </div>
             </div>
-          
+
             <div class="project-card">
                 <img src="images/bloggify.jpeg" alt="Blogify">
                 <div class="project-info">
                     <h3>Blogify</h3>
-                    <p>A custom blogging platform that offers an intuitive content management system, SEO optimization, and a user-friendly interface. Blogify is designed to help bloggers manage their content efficiently. Developed using Django and Vue.js.</p>
+                    <p>A custom blogging platform that offers an intuitive content management system, SEO optimization,
+                        and a user-friendly interface. Blogify is designed to help bloggers manage their content
+                        efficiently. Developed using Django and Vue.js.</p>
                 </div>
             </div>
             <div class="project-card">
                 <img src="images/fittrack.jpeg" alt="FitTrack">
                 <div class="project-info">
                     <h3>FitTrack</h3>
-                    <p>A fitness tracker app that helps users log workouts, track progress, and set fitness goals. FitTrack includes features like workout reminders, progress charts, and social sharing. Built with Swift for iOS and Kotlin for Android.</p>
+                    <p>A fitness tracker app that helps users log workouts, track progress, and set fitness goals.
+                        FitTrack includes features like workout reminders, progress charts, and social sharing. Built
+                        with Swift for iOS and Kotlin for Android.</p>
                 </div>
             </div>
-         
+
         </div>
     </section>
-    
-    <section id="testimonials" class="testimonial-con">
+    <section id="testimonial" class="testimonial-con">
         <h2>Testimonials</h2>
         <div class="testimonial-carousel">
             <input type="radio" name="carousel" id="slide1" checked>
             <input type="radio" name="carousel" id="slide2">
             <input type="radio" name="carousel" id="slide3">
-    
+
             <div class="testimonial-slides">
                 <div class="testimonial-slide">
                     <img src="images/testimonial1.jpg" alt="John Doe">
-                    <p>"Mary Jane's expertise and dedication were crucial to our project's success. Her problem-solving skills and innovative approach are unmatched."</p>
+                    <p>Mary Jane's expertise and dedication were crucial to our project's success. Her problem-solving
+                        skills and innovative approach are unmatched.</p>
                     <h4>John Doe</h4>
                     <h5>CEO, Tech Solutions</h5>
                 </div>
                 <div class="testimonial-slide">
                     <img src="images/testimonial2.jpg" alt="Jane Smith">
-                    <p>"Working with Mary was a pleasure. She consistently delivered high-quality work and was always willing to go the extra mile."</p>
+                    <p>Working with Mary was a pleasure. She consistently delivered high-quality work and was always
+                        willing to go the extra mile.</p>
                     <h4>Jane Smith</h4>
                     <h5>Project Manager, Web Innovators</h5>
                 </div>
                 <div class="testimonial-slide">
                     <img src="images/testimonial3.jpeg" alt="Robert Brown">
-                    <p>"Mary's technical skills are top-notch. She brought our ideas to life with her expertise and creativity."</p>
+                    <p>Mary's technical skills are top-notch. She brought our ideas to life with her expertise and
+                        creativity.</p>
                     <h4>Robert Brown</h4>
                     <h5>CTO, Startup Inc.</h5>
                 </div>
             </div>
-    
+
             <div class="carousel-controls">
                 <label for="slide1" class="carousel-control"></label>
                 <label for="slide2" class="carousel-control"></label>
@@ -133,31 +148,23 @@
             </div>
         </div>
     </section>
-    
-    
-    
-    
-    
-    
-    <section id="contact" class="contact-info">
-   
-        <div >
-            <h2><i class="fas fa-handshake"></i> Contact me </h2>
-            <p> If you'd like to get in touch, feel free to email me at <i class="fas fa-envelope"></i> <a href="mailto:maryjane@example.com">maryjane@example.com</a> or find me on <a href="https://www.linkedin.com/in/maryjane" target="_blank">LinkedIn</a>.</p>
-        </div>
+    <section class="contact-info" id="contact">
+        <h2><i class="fas fa-handshake"></i> Contact me</h2>
+        <p>If you'd like to get in touch, feel free to email me at <i class="fas fa-envelope"></i> <a
+                href="mailto:maryjane@example.com ">maryjane@example.com</a> or find me on LinkedIn.</p>
     </section>
-    
-    
     <footer class="container">
         <div class="footer-content">
             <p>&copy; 2024 Mary Jane. All rights reserved.</p>
             <ul class="social-links">
-                <li><a href="https://www.linkedin.com/in/maryjane" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                <li><a href="https://twitter.com/maryjanetweets" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="https://github.com/maryjane" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-github"></i></a></li>
+                <li><a href="#"><i class="fab fa-codepen"></i></a></li>
             </ul>
         </div>
+
     </footer>
-    
 </body>
+
 </html>
