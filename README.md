@@ -1,6 +1,6 @@
 # Portfolio Website with HTML & CSS
 
-This repository contains the source code for a portfolio website built using just HTML and CSS. Follow along with the [YouTube tutorial]() to create your own stunning portfolio website from scratch.
+This repository contains the source code for a portfolio website built using just HTML and CSS. Follow along with the [YouTube tutorial](https://youtu.be/qy_g3SjFaYw) to create your own stunning portfolio website from scratch.
 
 ## Table of Contents
 
